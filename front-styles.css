@@ -638,12 +638,19 @@ input::-ms-input-placeholder {
 .mobile-banner{
     width: 94%;
     min-height: 240px;
-    /* چک کردن مجدد ابعاد */
+    display: flex;
+    justify-content: center; 
+    align-items: center;   /* چک کردن مجدد ابعاد */
     margin: 10px auto;
-    position: relative;
+    /*position: relative;
     background-color: var(--white);
-    padding: 10px;
+    padding: 10px;*/
     border-radius: 10px;
+}
+
+.mobile-banner img{
+    max-width: 94vw;
+    border-radius: 15px;
 }
 
 .mobile-banner-description{
@@ -2674,15 +2681,15 @@ select option:checked{
     }
 
     .mobile-banners-container{
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        /*grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;*/
         width: 94%;
         max-width: 1940px;
         margin: 0 auto;
         column-gap: 0;
     }
 
-    .banner-one{
+    /*.banner-one{
         grid-column: 1/2;
         grid-row: 1/3;
     }
@@ -2695,7 +2702,7 @@ select option:checked{
     .banner-three{
         grid-column: 2/3;
         grid-row: 2/3;
-    }
+    }*/
 
     .categories{
         max-width: 1120px;
